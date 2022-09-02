@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg,#000000 0%,#ad0404 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 30px 40px;
+    width: 40%;
+    min-width: 500px;
+    margin-top: 1rem;
+}
+
+.textOne{
+    background-color: #2c2c2c;
+    border-radius: 5px 5px 0px 0px;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 0.5rem;
+    height: 2rem;
+}
+
+.new-task-container {
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+
+.new-task-container input {
+    font-size: 14px;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+    width: 70%;
+}
+
+.new-task-container input:focus {
+    outline: none;
+    border-color: #ad0404;
+}
+
+.new-task-button {
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 14px;
+    border: none;
+    background-color: #ad0404;
+    color: #fff;
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.tasks-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.task-item i {
+    background-color: #ad0404;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.task-item i:hover {
+    cursor: pointer;
+}
+
+.error {
+    border: 2px solid #ad0404 !important;
+}
+
+.error::placeholder {
+    color: #ad0404;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+@media (max-width: 414px){
+
+    .container{
+        width: 15%;
+        padding: 1px 1px;
+        min-width: 400px; 
+    }
+
+    .textOne{  
+        letter-spacing: 0.3rem ;
+        }
+
+    .new-task-container input{
+        font-size: 0.9rem; 
+        padding: 5px;
+    }
+    
+    .new-task-button{
+        height: 100%;
+        font-size: 0.9rem;
+        padding: 16px;
+        margin-left: 12px;
+    }
+
+}
+
+@media (max-width: 540px){
+
+    .container{
+        width: 15%;
+        padding: 10px 10px;
+        min-width: 350px;
+        
+    }
+
+    .textOne{  
+        letter-spacing: 0.1rem ;
+        }
+
+    .new-task-container input{
+        font-size: 0.7rem; 
+        padding: 15px;
+       
+    }
+}    
+
+    @media (max-width: 414px){
+
+        .container{
+            width: 20%;
+            padding: 10px 10px;
+            min-width: 350px;
+            
+        }
+    
+        .textOne{  
+            letter-spacing: 0.1rem ;
+            }
+    
+        .new-task-container input{
+            font-size: 0.7rem; 
+            padding: 15px;
+           
+        }  
+    }    
+   
+    @media (max-width: 375px){
+
+        .container{
+            width: 15%;
+            padding: 10px 10px;
+            min-width: 350px;
+            border: none;
+        }
+
+        .textOne{  
+            letter-spacing: 0.1rem ;
+        }
+
+        .new-task-container input{
+            font-size: 0.7rem; 
+            padding: 15px;
+        }
+    
+        .new-task-button{
+            height: 100%;
+            font-size: 0.7rem;
+            padding: 16px;
+            margin-left: 12px;
+        }
+
+    }
+
+    @media (max-width:280px){
+    
+        .container{
+            width: 10%;
+            padding: 2px 2px;
+            min-width: 265px; 
+        }
+
+        .new-task-container input{
+            font-size: 0.6rem; 
+            padding: 10px;
+        }
+    
+        .new-task-button{
+            height: 100%;
+            font-size: 0.6rem;
+            padding: 11px;
+            margin-left: 5px;
+    }
+
+}
